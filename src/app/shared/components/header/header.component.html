@@ -1,5 +1,10 @@
 <div id="header">
     <mat-toolbar>
         <span>Super Market</span>
+
+        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+        <mat-menu #menu="matMenu"  routerLinkActive="active">
+            <button mat-menu-item  routerLink="/categories">Categorias</button>
+        </mat-menu>
     </mat-toolbar>
 </div>
