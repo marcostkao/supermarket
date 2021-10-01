@@ -4,9 +4,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HeaderComponent } from './shared/components/header/header.component';
 import { MaterialModule } from './material.module';
 import { SharedModule } from './shared/shared.module';
+import { CategoriesService } from './categories/categories.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -17,7 +17,7 @@ import { SharedModule } from './shared/shared.module';
     MaterialModule,
     SharedModule,
   ],
-  providers: [],
+  providers: [CategoriesService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
