@@ -1,27 +1,18 @@
-import { Injectable } from '@angular/core';
+import { ErrorHandler, Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 import { Category } from './category';
 
+import { MARKET_API } from '../app.api';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class CategoriesService {
+  constructor(private http: HttpClient) {}
 
-  categ: Category[] = [
-    {
-      id: "frutas",
-      name: "Maça",
-      imagePath: "assets/img/categories/maca.png"
-    },
-    {
-      id: "frutas",
-      name: "Banana",
-      imagePath: "assets/img/categories/banana.png"
-    }
-  ]
-
-  constructor() { }
-
-  categories(): Category[] {
-    return this.categ;
+  categories(): Observable<Category[]> {
+    return this.http.get<Category[]>(`${MARKET_API}/categories`)
   }
 }

@@ -1,0 +1,19 @@
+{
+  "categories": [
+    {
+      "id": "frutas",
+      "name": "Maça",
+      "imagePath": "assets/img/categories/apple.png"
+    },
+    {
+      "id": "frutas",
+      "name": "Banana",
+      "imagePath": "assets/img/categories/banana.png"
+    },
+    {
+      "id": "frutas",
+      "name": "Tomate",
+      "imagePath": "assets/img/categories/tomato.png"
+    }
+  ]
+}

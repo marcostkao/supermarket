@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { SharedModule } from './shared/shared.module';
 import { CategoriesService } from './categories/categories.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,6 +17,7 @@ import { CategoriesService } from './categories/categories.service';
     BrowserAnimationsModule,
     MaterialModule,
     SharedModule,
+    HttpClientModule
   ],
   providers: [CategoriesService],
   bootstrap: [AppComponent],

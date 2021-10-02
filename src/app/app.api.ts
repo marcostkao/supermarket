@@ -1,0 +1,1 @@
+export const MARKET_API = 'http://localhost:3000'
