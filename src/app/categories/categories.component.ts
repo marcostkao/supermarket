@@ -5,17 +5,16 @@ import { Category } from './category';
 @Component({
   selector: 'app-categories',
   templateUrl: './categories.component.html',
-  styleUrls: ['./categories.component.scss']
+  styleUrls: ['./categories.component.scss'],
 })
 export class CategoriesComponent implements OnInit {
+  categories: Category[];
 
-  categories: Category[]
-
-  constructor(private categoriesService: CategoriesService) { }
+  constructor(private categoriesService: CategoriesService) {}
 
   ngOnInit(): void {
-    this.categoriesService.categories()
-      .subscribe(categories => this.categories = categories)
+    this.categoriesService
+      .categories()
+      .subscribe((categories) => (this.categories = categories));
   }
-
 }
