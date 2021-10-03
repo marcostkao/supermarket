@@ -1,5 +1,23 @@
+@import "../../../../sass/variables";
+
 #header {
-    mat-toolbar {
-        background-color: #ffec47;
+  mat-toolbar {
+    background-color: $yellow-one;
+
+    a {
+      text-decoration: none;
+      margin-left: 10%;
+
+      span {
+        font-size: 24px;
+        text-decoration: none;
+        color: rgb(31, 31, 31);
+      }
     }
+
+    .menu {
+      margin-left: 15px;
+      color: $black-two;
+    }
+  }
 }
