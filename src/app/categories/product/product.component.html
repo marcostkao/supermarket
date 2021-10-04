@@ -1,16 +1,12 @@
 <a [routerLink]="['/categories', product.id]">
-    <div>
-        <mat-card class="card" card>
+    <div id="card">
+        <mat-card card>
             <img mat-card-image [src]="product.imagePath">
             <mat-card-content>
-                <p>
-                    {{product.name}}
-                </p>
-                <p>
-                    {{product.category}}
-                </p>
+                <span>
+                    {{ product.name }}
+                </span>
           </mat-card-content>
         </mat-card>
-        
     </div>
 </a>
