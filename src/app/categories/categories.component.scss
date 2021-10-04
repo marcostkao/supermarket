@@ -1,4 +1,16 @@
-.cards-product {
-  display: flex;
-  flex-direction: row;
+@import "../../sass/variables";
+
+#categories {
+  // margin: 10% 20%;
+  // text-align: center;
+  // text-decoration: none;
+  // color: black;
+
+
+  .cards-product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
 }
