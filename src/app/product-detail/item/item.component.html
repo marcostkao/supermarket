@@ -1,6 +1,7 @@
 <mat-card id="item">
     <img mat-card-image [src]="item?.imagePath">
     <span class="item-name">{{item?.name}}</span>
+    <span class="item-price" >R$:{{item?.price}}</span>
     <mat-card-actions class="btn-add" align="end">
         <a (click)="emitAddEvent()">
             <span>Adicionar</span>

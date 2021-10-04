@@ -1,1 +1,36 @@
-<p>shopping-cart works!</p>
+<mat-card id="cart">
+    <mat-card-title>
+        <mat-icon>shopping_cart</mat-icon>
+        <span>Carrinho</span>
+    </mat-card-title>
+
+    <div *ngIf="!items().length">
+        <p class="text-center">
+            Seu carrinho está vazio!
+        </p>
+    </div>
+
+    <div class="table-responsive" *ngIf="items().length">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let item of items()">
+                    <th>({{item.quantity}}x) {{item.item.name}}</th>
+                    <td class="text-right">{{item.value() | currency: 'BRL': true}}</td>
+                    <td class="text-right">
+                        <a (click)="removeItem(item)" class="btn btn-sm danger"></a>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Total:</th>
+                    <td class="text-right">{{total() | currency: 'BRL': true}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <mat-card-actions align="end" >
+        <button mat-raised-button color="accent" (click)="clear()" >Limpar</button>
+        <button mat-raised-button color="primary">Fechar pedido</button>
+    </mat-card-actions>
+</mat-card>
+
+

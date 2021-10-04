@@ -8,6 +8,7 @@ import { MaterialModule } from './material.module';
 import { SharedModule } from './shared/shared.module';
 import { CategoriesService } from './categories/categories.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ShoppingCartService } from './product-detail/shopping-cart/shopping-cart.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,7 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     SharedModule,
     HttpClientModule
   ],
-  providers: [CategoriesService],
+  providers: [CategoriesService, ShoppingCartService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

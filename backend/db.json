@@ -2,18 +2,36 @@
   "categories": [
     {
       "id": "frutas",
+      "name": "Frutas",
+      "imagePath": "assets/img/categories/frutas.png"
+    },
+    {
+      "id": "verduras",
+      "name": "Verduras",
+      "imagePath": "assets/img/categories/verduras.png"
+    }
+  ],
+  "item": [
+    {
+      "id": "frutas",
+      "imagePath": "assets/img/categories/maca.png",
       "name": "Maça",
-      "imagePath": "assets/img/categories/apple.png"
+      "description": "Produto natural",
+      "price": 1.8
     },
     {
       "id": "frutas",
+      "imagePath": "assets/img/categories/banana.png",
       "name": "Banana",
-      "imagePath": "assets/img/categories/banana.png"
+      "description": "Produto natural de banana",
+      "price": 1.2
     },
     {
-      "id": "legumes",
+      "id": "verduras",
+      "imagePath": "assets/img/categories/tomato.png",
       "name": "Tomate",
-      "imagePath": "assets/img/categories/tomato.png"
+      "description": "Produto natural de tomate",
+      "price": 2.4
     }
   ]
 }

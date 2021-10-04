@@ -27,6 +27,8 @@ export class ProductDetailComponent implements OnInit {
       .subscribe((category) => (this.category = category));
 
    this.items = this.categoriesService.itemOfCategories(this.route.parent.snapshot.params['id'])
+   console.log(this.route.snapshot.firstChild.data);
+   
   }
 
   addItem(item: Item){
