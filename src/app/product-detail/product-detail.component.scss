@@ -1,0 +1,32 @@
+@import "../../sass/variables";
+
+#product-detail {
+  .card {
+    background-color: rgb(255, 60, 60);
+    margin: 15px 40px;
+    font-size: 24px;
+
+    span{
+      font-size: 24px;
+      color: $white;
+    }
+  }
+
+ 
+  .row {
+    display: flex;
+    flex-direction: row;
+
+    .item {
+      display: flex;
+      flex-direction: row;
+      margin-left: 40px;
+    }
+
+    .cart {
+      margin-right: 40px;
+      position: absolute;
+      right: 0;
+    }
+  }
+}
